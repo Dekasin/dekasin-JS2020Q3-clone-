@@ -1,11 +1,44 @@
 body {
+	background-color: #bbb;
 	margin: 0;
 	padding: 0;
+	color: rgb(236, 226, 226);
+}
+
+.wrapper {
+	max-width: 1600px;
+	background-color: #fff;
+	margin: 0 auto;
 }
 
 .container {
-	max-width: 1282px;
+	max-width: 1280px;
 	margin: 0 auto;
+}
+
+.first-screen {
+	background-image: url(assets/bg-image.png);
+	min-height: 744px;
+}
+
+.second-screen .fourth-screen {
+	min-height: 842px;
+	/* background-color:#fff; */
+}
+
+.third-screen {
+	min-height: 504px;
+	/* background-color:#fff; */
+}
+
+.fifth-screen {
+	background-image: url(assets/pexels-christina-morillo-1181675\ 1.png);
+	min-height: 524px;
+}
+
+.sixth-screen {
+	min-height: 464px;
+	/* background-color:#fff; */
 }
 
 header {}
@@ -26,4 +59,24 @@ nav {
 
 .upper {
 	text-transform: uppercase;
+}
+
+/* footer */
+footer {
+	min-height: 185px;
+	background-color: #000;
+	//styleName: body-14-reg;
+	color: #fff;
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: left;
+
+}
+
+.flex {
+	display: flex;
 }
