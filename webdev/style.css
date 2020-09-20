@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+	position: relative;
 	max-width: 1280px;
 	margin: 0 auto;
 }
@@ -23,9 +24,14 @@ body {
 
 .second-screen .fourth-screen {
 	min-height: 842px;
+	display: flex;
+	/* flex-direction: row; */
+
 	/* background-color:#fff; */
 }
-
+.image {
+	margin: 109px;
+}
 .third-screen {
 	min-height: 504px;
 	/* background-color:#fff; */
@@ -38,19 +44,29 @@ body {
 
 .sixth-screen {
 	min-height: 464px;
-	/* background-color:#fff; */
+	}
+
+header{
+	min-height: 95px;
+	
 }
 
-header {}
-
 nav {
+	margin: 0 auto;
+	padding-top:23px;
+	max-width: 625px;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .nav__link {
+	color:#fff;
 	text-decoration: none;
+}
+.nav__link:hover{
+	cursor:pointer;
+	text-decoration: underline;
 }
 
 .capital {
@@ -65,7 +81,7 @@ nav {
 footer {
 	min-height: 185px;
 	background-color: #000;
-	//styleName: body-14-reg;
+	
 	color: #fff;
 	font-family: Roboto;
 	font-size: 14px;
@@ -74,9 +90,14 @@ footer {
 	line-height: 20px;
 	letter-spacing: 0px;
 	text-align: left;
-
+	/* display: flex;
+	align-items: center; */
 }
-
-.flex {
+.footer-line {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+/* .flex {
+	display: flex;
+} */
