@@ -21,12 +21,19 @@ body {
 	background-image: url(assets/bg-image.png);
 	min-height: 744px;
 }
-
+.socials {
+	/* padding-bottom: 90px; */
+	margin: 0 auto;
+	
+	position: absolute;
+	bottom: 90px;
+	/* left: 200px; */
+}
 .second-screen .fourth-screen {
 	min-height: 842px;
 	display: flex;
 	/* flex-direction: row; */
-
+	justify-content:center;
 	/* background-color:#fff; */
 }
 .image {
@@ -34,9 +41,14 @@ body {
 }
 .third-screen {
 	min-height: 504px;
-	/* background-color:#fff; */
+	
+	display: flex;
+	
+	justify-content:center;
 }
-
+.our-community{
+	max-width: 298px;
+}
 .fifth-screen {
 	background-image: url(assets/pexels-christina-morillo-1181675\ 1.png);
 	min-height: 524px;
@@ -53,7 +65,7 @@ header{
 
 nav {
 	margin: 0 auto;
-	padding-top:23px;
+	padding-top:25px;
 	max-width: 625px;
 	display: flex;
 	justify-content: space-between;
@@ -94,9 +106,18 @@ footer {
 	align-items: center; */
 }
 .footer-line {
+	padding-top: 60px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.line {
+	margin-left: 20px;
+	margin-right: 20px;
+	display: inline-block;
+	width: 0.5px;
+	height: 7px;
+	background-color: wheat;
 }
 /* .flex {
 	display: flex;
