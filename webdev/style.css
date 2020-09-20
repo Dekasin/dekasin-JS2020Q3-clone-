@@ -1,4 +1,29 @@
 body {
 	margin: 0;
-	padding:0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1282px;
+	margin: 0 auto;
+}
+
+header {}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav__link {
+	text-decoration: none;
+}
+
+.capital {
+	text-transform: capitalize;
+}
+
+.upper {
+	text-transform: uppercase;
 }
