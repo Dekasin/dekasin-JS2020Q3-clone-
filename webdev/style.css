@@ -66,6 +66,27 @@ color: #373737;
 h4 {
 	font-size: 16px;
 	font-weight: 500;
+
+	position: absolute;
+/* width: 160px; */
+height: 20px;
+left: calc(50% - 160px/2);
+top: 45px;
+
+/* h3-16-upper-bold */
+
+
+
+line-height: 20px;
+/* identical to box height, or 125% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 2.4px;
+text-transform: uppercase;
+
+color: #373737;
 }
 
 .white {
@@ -128,6 +149,7 @@ nav {
 
 .main-text {
 	/* margin: 20px auto 30px auto; */
+ 
 
 	text-align: center;
 	font-size: 18px;
@@ -136,16 +158,14 @@ nav {
 	position: absolute;
 	width: 504px;
 	height: 50px;
-	left: calc(50% - 504px/2);
-	top: calc(50% - 50px/2 - 22px);
+	left: calc(50% - 500px/2);
+	top: calc(50% - 50px/2 - 36px);
 
 
 	font-style: normal;
 	font-weight: normal;
 
 	/* or 25px */
-
-
 	color: #FFFFFF;
 
 }
@@ -229,14 +249,43 @@ nav {
 	left: 269px;
 	top: 155px;
 }
+.userpic{
+	position: absolute;
+width: 45px;
+height: 45px;
+left: 127px;
+top: 0px;
+}
+.text-3 {
+	position: absolute;
+width: 298px;
+height: 80px;
+left: calc(50% - 298px/2);
+top: 78px;
 
+/* body-14-reg */
+
+
+line-height: 140%;
+/* or 20px */
+
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #4E4E4E;
+}
 .slider-items {
 	position: absolute;
-	width: 894px;
+	/* width: 894px; */
 	height: 244px;
 	left: 706px;
 	top: 120px;
-	overflow-x: scroll;
+	overflow: scroll;
+	/* overflow: visible; */
+}
+.slider-items>img{
+	padding-right:29px;
 }
 
 .slider-nav-items {
@@ -338,6 +387,7 @@ margin: 0px 0px;
 	text-decoration: none;
 	font-size: 14px;
 	position: relative;
+	line-height: 140%;
 }
 
 .nav__link:hover {
@@ -371,33 +421,47 @@ footer {
 	min-height: 185px;
 	background-color: #000;
 
-	color: #fff;
+	/* color: #fff;
 	font-family: Roboto;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 20px;
 	letter-spacing: 0px;
-	text-align: left;
+	text-align: left; */
 
 }
 
-.footer-line {
-	padding-top: 60px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
 
+
+.footer__nav{
+	position: absolute;
+/* width: 236px; */
+height: 20px;
+left: 160px;
+top: 74px;
+}
 .line {
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 17px;
+	margin-right: 15px;
 	display: inline-block;
-	width: 0.5px;
-	height: 7px;
-	background-color: wheat;
+	width: 0px;
+	height: 8px;
+	border: 1px solid #4E4E4E;
+	
 }
-
-.sign {
+.footer--logo{
+	position: absolute;
+width: 44px;
+height: 45px;
+left: 778px;
+top: 60px;
+}
+.copyright {
 	color: #818181;
+	position: absolute;
+/* width: 170px; */
+/* height: 20px; */
+left: 1271px;
+top: 74px;
 }
