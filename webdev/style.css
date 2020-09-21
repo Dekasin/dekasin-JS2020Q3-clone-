@@ -22,8 +22,6 @@ body {
 	position: relative;
 	max-width: 1280px;
 	margin: 0 auto;
-	border: 3px #00f solid;
-
 }
 
 h1 {
@@ -33,16 +31,15 @@ h1 {
 h2 {
 	font-size: 64px;
 	font-weight: 700;
-	/* line-height: 75px; */
 	letter-spacing: .2px;
-	border: 1px solid #fff;
+
 }
 
 h3 {
 	font-size: 24px;
 	font-weight: 700;
 	text-transform: uppercase;
-	/* text-align: left; */
+
 }
 
 h4 {
@@ -65,11 +62,11 @@ h4 {
 	width: 184px;
 	text-align: center;
 	padding-top: 15px;
-	/* margin:auto; */
+
 }
 
-.button:hover{
-	cursor:pointer;
+.button:hover {
+	cursor: pointer;
 	background-color: #009CC2;
 }
 
@@ -82,7 +79,7 @@ header {
 	min-height: 95px;
 	margin: 0 auto 75px auto;
 	padding-top: 25px;
-	border: 1px solid white;
+
 }
 
 nav {
@@ -91,14 +88,12 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border: 1px solid white;
+
 }
 
 .your-life {
-	/* padding-top: 100px; */
-	margin: 0 auto;
-	border: 1px solid #aaa;
 
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -120,49 +115,53 @@ nav {
 }
 
 .second-screen .fourth-screen {
-	/* position: relative; */
+
 	height: 842px;
-	/* display: flex; */
-	/* flex-direction: row; */
-	/* justify-content: space-between; */
-	border: 3px #f00 solid;
+
 
 }
-.rappresent{
+
+.rappresent {
 	width: 407px;
 	text-align: center;
 }
-.rappresent>p{
+
+.rappresent>p {
 	width: 407px;
 	margin: 0 auto;
-	line-height:140%;
+	line-height: 140%;
 	text-align: left;
 }
+
 .rap {
-	/* position: absolute; */
+
 	width: 407px;
 	height: 582px;
 	left: 924px;
 	top: 120px;
 }
+
 .imp {
-	/* position: absolute; */
-width: 407px;
-height: 582px;
-left: 269px;
-top: 120px;
+
+	width: 407px;
+	height: 582px;
+	left: 269px;
+	top: 120px;
 }
+
 .image {
 	display: block;
 	margin: 120px 139px 140px 109px
 }
+
 .implement {
 	position: absolute;
-width: 407px;
-height: 184px;
-left: 815px;
-top: 319px;
+	width: 407px;
+	height: 184px;
+	left: 815px;
+	top: 319px;
 }
+
 .third-screen {
 	height: 504px;
 
@@ -180,23 +179,27 @@ top: 319px;
 	height: 524px;
 	padding: 200px 0 0 0;
 	text-align: center;
-	border: 1px solid #f00
+
 }
+
 .form {
 	display: inline-block;
 	text-align: center;
 }
+
 .sixth-screen {
 	min-height: 464px;
-	text-align:center;
+	text-align: center;
 	padding-top: 120px;
 }
-.text-6{
+
+.text-6 {
 	display: inline-block;
-	max-width:480px;
+	max-width: 480px;
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
+
 .nav__link {
 	color: #fff;
 	text-decoration: none;
@@ -217,7 +220,7 @@ top: 319px;
 	text-transform: uppercase;
 }
 
-/* footer */
+
 footer {
 	min-height: 185px;
 	background-color: #000;
@@ -230,8 +233,7 @@ footer {
 	line-height: 20px;
 	letter-spacing: 0px;
 	text-align: left;
-	/* display: flex;
-	align-items: center; */
+
 }
 
 .footer-line {
