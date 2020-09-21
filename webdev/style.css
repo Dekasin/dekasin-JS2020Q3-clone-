@@ -13,6 +13,7 @@ body {
 }
 
 .wrapper {
+	position:relative;
 	max-width: 1600px;
 	background-color: #fff;
 	margin: 0 auto;
@@ -71,6 +72,7 @@ h4 {
 }
 
 .first-screen {
+	position: relative;
 	background-image: url(assets/bg-image.png);
 	min-height: 744px;
 }
@@ -114,16 +116,17 @@ nav {
 	border: 1px solid #aaa;
 }
 
-.second-screen .fourth-screen {
-
+.second-screen{
+	position: relative;
+	/* display:flex; */
 	height: 842px;
-
 
 }
 
 .rappresent {
 	width: 407px;
 	text-align: center;
+	
 }
 
 .rappresent>p {
@@ -133,45 +136,72 @@ nav {
 	text-align: left;
 }
 
-.rap {
-
+.content-image-1 {
+	position: absolute;
 	width: 407px;
 	height: 582px;
 	left: 924px;
 	top: 120px;
 }
 
-.imp {
-
-	width: 407px;
-	height: 582px;
-	left: 269px;
-	top: 120px;
+.content-image-2 {
+position: absolute;
+width: 407px;
+height: 582px;
+left: 269px;
+top: 120px;
 }
 
-.image {
-	display: block;
-	margin: 120px 139px 140px 109px
-}
-
-.implement {
+.content-block{
 	position: absolute;
 	width: 407px;
-	height: 184px;
-	left: 815px;
+	/* height: 184px; */
+	
+}
+.content-block--left{
+	height: 233px;
+	top:295px;
+	left:269px;
+}
+.content-block--right{
 	top: 319px;
+	left:815px;
 }
-
 .third-screen {
+	position: relative ;
 	height: 504px;
-
-	display: flex;
-
-	justify-content: center;
+	background-color: #F5F6F7;
+	
 }
 
-.our-community {
-	max-width: 298px;
+.user-card {
+position: absolute;
+width: 298px;
+height: 175px;
+left: 269px;
+top: 155px;
+}
+.slider-items{
+	position: absolute;
+width: 894px;
+height: 244px;
+left: 706px;
+top: 120px;
+overflow-x: scroll;
+}
+.slider-nav-items{
+	position: absolute;
+width: 83px;
+height: 18px;
+right: 269px;
+top: 82px;
+
+
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 100%;
+
 }
 
 .fifth-screen {
@@ -204,14 +234,24 @@ nav {
 	color: #fff;
 	text-decoration: none;
 	font-size: 14px;
+	position: relative;
 }
 
 .nav__link:hover {
 	cursor: pointer;
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	font-weight: 500;
 }
-
+.nav__link:hover:after{
+	content: '';
+	position:absolute;
+	width: 100%;
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    background-color: #fff;
+    margin: 0px 0px 0px 0px;
+}
 .capital {
 	text-transform: capitalize;
 }
