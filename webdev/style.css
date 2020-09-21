@@ -134,7 +134,7 @@ header {
 	height: 45px;
 	left: calc(50% - 44px/2);
 	top: 25px;
-	/* margin:0 100px; */
+
 }
 
 .about {
@@ -198,7 +198,6 @@ header {
 
 .second-screen {
 	position: relative;
-
 	height: 842px;
 
 }
@@ -521,23 +520,12 @@ footer {
 	position: relative;
 	min-height: 185px;
 	background-color: #000;
-
-	/* color: #fff;
-	font-family: Roboto;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 20px;
-	letter-spacing: 0px;
-	text-align: left; */
-
 }
 
 
 
 .footer__nav {
 	position: absolute;
-	/* width: 236px; */
 	height: 20px;
 	left: 160px;
 	top: 74px;
@@ -564,8 +552,6 @@ footer {
 .copyright {
 	color: #818181;
 	position: absolute;
-	/* width: 170px; */
-	/* height: 20px; */
-	left: 1271px;
+		left: 1271px;
 	top: 74px;
 }
