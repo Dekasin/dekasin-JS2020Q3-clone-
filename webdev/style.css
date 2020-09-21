@@ -2,7 +2,46 @@ body {
 	background-color: #bbb;
 	margin: 0;
 	padding: 0;
-	color: rgb(236, 226, 226);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+h1 {
+	display: none;
+}
+
+h2 {
+	font-size: 64px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.white {
+	color: #fff;
+}
+
+.button {
+	display: inline-block;
+	background-color: #00AFDB;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	height: 46px;
+	width: 184px;
+	text-align: center;
+	padding-top: 20px;
+	/* margin:auto; */
 }
 
 .wrapper {
@@ -12,7 +51,7 @@ body {
 }
 
 .container {
-	position: relative;
+	/* position: relative; */
 	max-width: 1280px;
 	margin: 0 auto;
 }
@@ -21,34 +60,40 @@ body {
 	background-image: url(assets/bg-image.png);
 	min-height: 744px;
 }
+
 .socials {
 	/* padding-bottom: 90px; */
 	margin: 0 auto;
-	
+
 	position: absolute;
 	bottom: 90px;
 	/* left: 200px; */
 }
+
 .second-screen .fourth-screen {
 	min-height: 842px;
 	display: flex;
 	/* flex-direction: row; */
-	justify-content:center;
+	justify-content: space-between;
 	/* background-color:#fff; */
 }
+
 .image {
 	margin: 109px;
 }
+
 .third-screen {
 	min-height: 504px;
-	
+
 	display: flex;
-	
-	justify-content:center;
+
+	justify-content: center;
 }
-.our-community{
+
+.our-community {
 	max-width: 298px;
 }
+
 .fifth-screen {
 	background-image: url(assets/pexels-christina-morillo-1181675\ 1.png);
 	min-height: 524px;
@@ -56,16 +101,16 @@ body {
 
 .sixth-screen {
 	min-height: 464px;
-	}
+}
 
-header{
+header {
 	min-height: 95px;
-	
+
 }
 
 nav {
 	margin: 0 auto;
-	padding-top:25px;
+	padding-top: 25px;
 	max-width: 625px;
 	display: flex;
 	justify-content: space-between;
@@ -73,12 +118,16 @@ nav {
 }
 
 .nav__link {
-	color:#fff;
+	color: #fff;
 	text-decoration: none;
+	font-size: 14px;
+
 }
-.nav__link:hover{
-	cursor:pointer;
+
+.nav__link:hover {
+	cursor: pointer;
 	text-decoration: underline;
+	font-weight: 500;
 }
 
 .capital {
@@ -93,7 +142,7 @@ nav {
 footer {
 	min-height: 185px;
 	background-color: #000;
-	
+
 	color: #fff;
 	font-family: Roboto;
 	font-size: 14px;
@@ -105,12 +154,14 @@ footer {
 	/* display: flex;
 	align-items: center; */
 }
+
 .footer-line {
 	padding-top: 60px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
+
 .line {
 	margin-left: 20px;
 	margin-right: 20px;
@@ -119,6 +170,10 @@ footer {
 	height: 7px;
 	background-color: wheat;
 }
+.sign{
+color:#818181;
+}
+
 /* .flex {
 	display: flex;
 } */
