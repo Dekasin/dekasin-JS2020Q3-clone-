@@ -1,10 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #bbb;
 	margin: 0;
 	padding: 0;
+	border: 0;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
+}
+
+.wrapper {
+	max-width: 1600px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+.container {
+	position: relative;
+	max-width: 1280px;
+	margin: 0 auto;
+	border: 3px #00f solid;
+
 }
 
 h1 {
@@ -14,11 +33,16 @@ h1 {
 h2 {
 	font-size: 64px;
 	font-weight: 700;
+	/* line-height: 75px; */
+	letter-spacing: .2px;
+	border: 1px solid #fff;
 }
 
 h3 {
 	font-size: 24px;
 	font-weight: 700;
+	text-transform: uppercase;
+	/* text-align: left; */
 }
 
 h4 {
@@ -40,20 +64,13 @@ h4 {
 	height: 46px;
 	width: 184px;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 15px;
 	/* margin:auto; */
 }
 
-.wrapper {
-	max-width: 1600px;
-	background-color: #fff;
-	margin: 0 auto;
-}
-
-.container {
-	/* position: relative; */
-	max-width: 1280px;
-	margin: 0 auto;
+.button:hover{
+	cursor:pointer;
+	background-color: #009CC2;
 }
 
 .first-screen {
@@ -61,29 +78,93 @@ h4 {
 	min-height: 744px;
 }
 
-.socials {
-	/* padding-bottom: 90px; */
-	margin: 0 auto;
+header {
+	min-height: 95px;
+	margin: 0 auto 75px auto;
+	padding-top: 25px;
+	border: 1px solid white;
+}
 
-	position: absolute;
-	bottom: 90px;
-	/* left: 200px; */
+nav {
+	margin: 0 auto;
+	max-width: 590px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid white;
+}
+
+.your-life {
+	/* padding-top: 100px; */
+	margin: 0 auto;
+	border: 1px solid #aaa;
+
+	text-align: center;
+}
+
+.main-text {
+	margin: 20px auto 30px auto;
+	max-width: 504px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 140%;
+}
+
+.socials {
+	max-width: 170px;
+	margin: 183px auto 90px auto;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #aaa;
 }
 
 .second-screen .fourth-screen {
-	min-height: 842px;
-	display: flex;
+	/* position: relative; */
+	height: 842px;
+	/* display: flex; */
 	/* flex-direction: row; */
-	justify-content: space-between;
-	/* background-color:#fff; */
-}
+	/* justify-content: space-between; */
+	border: 3px #f00 solid;
 
+}
+.rappresent{
+	width: 407px;
+	text-align: center;
+}
+.rappresent>p{
+	width: 407px;
+	margin: 0 auto;
+	line-height:140%;
+	text-align: left;
+}
+.rap {
+	/* position: absolute; */
+	width: 407px;
+	height: 582px;
+	left: 924px;
+	top: 120px;
+}
+.imp {
+	/* position: absolute; */
+width: 407px;
+height: 582px;
+left: 269px;
+top: 120px;
+}
 .image {
-	margin: 109px;
+	display: block;
+	margin: 120px 139px 140px 109px
 }
-
+.implement {
+	position: absolute;
+width: 407px;
+height: 184px;
+left: 815px;
+top: 319px;
+}
 .third-screen {
-	min-height: 504px;
+	height: 504px;
 
 	display: flex;
 
@@ -96,32 +177,30 @@ h4 {
 
 .fifth-screen {
 	background-image: url(assets/pexels-christina-morillo-1181675\ 1.png);
-	min-height: 524px;
+	height: 524px;
+	padding: 200px 0 0 0;
+	text-align: center;
+	border: 1px solid #f00
 }
-
+.form {
+	display: inline-block;
+	text-align: center;
+}
 .sixth-screen {
 	min-height: 464px;
+	text-align:center;
+	padding-top: 120px;
 }
-
-header {
-	min-height: 95px;
-
+.text-6{
+	display: inline-block;
+	max-width:480px;
+	margin-top: 20px;
+	margin-bottom: 30px;
 }
-
-nav {
-	margin: 0 auto;
-	padding-top: 25px;
-	max-width: 625px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
 .nav__link {
 	color: #fff;
 	text-decoration: none;
 	font-size: 14px;
-
 }
 
 .nav__link:hover {
@@ -170,10 +249,7 @@ footer {
 	height: 7px;
 	background-color: wheat;
 }
-.sign{
-color:#818181;
-}
 
-/* .flex {
-	display: flex;
-} */
+.sign {
+	color: #818181;
+}
