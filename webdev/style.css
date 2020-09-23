@@ -294,6 +294,7 @@ header {
 	position: absolute;
 	left: 0px;
 	top: 138px;
+
 }
 
 .third-screen {
@@ -396,7 +397,19 @@ header {
 	left: 0px;
 	top: 58px;
 }
-
+input[type="email"]::-moz-placeholder {
+	position:relative;
+	left:20px;
+	color: #373737;
+	opacity: 0.5;
+}
+input[type="email"]::-webkit-input-placeholder {
+	
+	position:relative;
+	left:20px;
+	color: #373737;
+	opacity: 0.5;
+  } 
 #submit {
 	position: absolute;
 	width: 66px;
@@ -479,6 +492,13 @@ header {
 	line-height: 140%;
 	opacity: 0.8;
 }
+.footer-pointer {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 140%;
+	opacity: 0.8;
+}
 
 .nav__link:hover {
 	cursor: pointer;
@@ -554,4 +574,8 @@ footer {
 	position: absolute;
 	right: 160px;
 	top: 74px;
+}
+.pointer:hover{
+	cursor:pointer;
+	transform: scale(1.1);
 }
