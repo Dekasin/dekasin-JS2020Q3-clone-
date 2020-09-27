@@ -12,8 +12,7 @@ var numbers = document.querySelectorAll('.number'),
 for (var i = 0; i < numbers.length; i++) {
 	var number = numbers[i];
 	number.addEventListener('click', function (e) {
-		//console.log(e)
-		numberPress(e.srcElement.innerHTML)
+	numberPress(e.srcElement.innerHTML)
 	});
 
 };
@@ -31,8 +30,6 @@ for (var i = 0; i < clearBtns.length; i++) {
 		clear(e.srcElement.id)
 	})
 };
-
-// resultBtn.addEventListener('click', result);
 
 decimalBtn.addEventListener('click', decimal);
 
@@ -52,7 +49,9 @@ function numberPress(number) {
 
 	function operation(op) {
 		var localOperationMemory = display.value;
-
+		if (MemoryPendingOperation === "√"){
+			localOperationMemory = Math.sqrt(parseFloat(localOperationMemory));// doesn't work! why?
+		};
 		if (MemoryNewNumber && MemoryPendingOperation !== '=') {
 			display.value = MemoryCurrentNumber;
 		} else {
@@ -65,7 +64,9 @@ function numberPress(number) {
 				MemoryCurrentNumber *= parseFloat(localOperationMemory);
 			} else if (MemoryPendingOperation === "/") {
 				MemoryCurrentNumber /= parseFloat(localOperationMemory);
-			} else {
+			} else if (MemoryPendingOperation === "^"){
+				MemoryCurrentNumber = MemoryCurrentNumber ** parseFloat(localOperationMemory);
+			}else {
 				MemoryCurrentNumber = parseFloat(localOperationMemory);
 			};
 			display.value = MemoryCurrentNumber;
@@ -76,13 +77,32 @@ function numberPress(number) {
 
 	function decimal() {
 		console.log('Click on button decimal!');
+
+		var localDecimalMemory = display.value;
+
+		if (MemoryNewNumber) {
+			localDecimalMemory='0.';
+			MemoryNewNumber = false;
+		} else {
+			if(localDecimalMemory.indexOf('.')=== -1){
+				
+			localDecimalMemory+="."
+			}
+		}
+		display.value = localDecimalMemory;
 	};
 
 	function clear(id) {
 		console.log('Click on button ' + id + '!');
 
-	};
+		if(id==='ce'){
+			display.value = 0;
+			MemoryNewNumber = true;
+		} else if(id ==='c'){
+			display.value = 0;
+			MemoryNewNumber = true;
+			MemoryCurrentNumber = 0;
+			MemoryPendingOperation = '';
+		}
 
-	// function result() {
-	// 	console.log('Click on button result')
-	// };
+	};
