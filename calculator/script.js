@@ -49,7 +49,7 @@ function numberPress(number) {
 
 	function operation(op) {
 		var localOperationMemory = display.value;
-		if (MemoryPendingOperation === "√"){
+		if (MemoryPendingOperation === "√x"){
 			localOperationMemory = Math.sqrt(parseFloat(localOperationMemory));// doesn't work! why?
 		};
 		if (MemoryNewNumber && MemoryPendingOperation !== '=') {
@@ -64,7 +64,7 @@ function numberPress(number) {
 				MemoryCurrentNumber *= parseFloat(localOperationMemory);
 			} else if (MemoryPendingOperation === "/") {
 				MemoryCurrentNumber /= parseFloat(localOperationMemory);
-			} else if (MemoryPendingOperation === "^"){
+			} else if (MemoryPendingOperation === "xy"){// how? why not<sup>?
 				MemoryCurrentNumber = MemoryCurrentNumber ** parseFloat(localOperationMemory);
 			}else {
 				MemoryCurrentNumber = parseFloat(localOperationMemory);
