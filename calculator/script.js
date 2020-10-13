@@ -2,6 +2,7 @@ var numbers = document.querySelectorAll('.number'),
 	operators = document.querySelectorAll('.operator'),
 	decimalBtn = document.getElementById('decim'),
 	clearBtns = document.querySelectorAll('.clear-btn'),
+	sqrtBtn = document.getElementById('sqrt'),
 	display = document.getElementById('display'),
 	MemoryCurrentNumber = 0,
 	MemoryNewNumber = false,
@@ -33,6 +34,8 @@ for (var i = 0; i < clearBtns.length; i++) {
 
 decimalBtn.addEventListener('click', decimal);
 
+sqrtBtn.addEventListener('click', square);
+
 function numberPress(number) {
 	console.log('Click on button with ' + number + '!');
 	if (MemoryNewNumber) {
@@ -47,11 +50,21 @@ function numberPress(number) {
 	}
 	};
 
+	function square(){
+		// if (MemoryPendingOperation === "√x"){
+		// 	localOperationMemory = Math.sqrt(parseFloat(localOperationMemory));// doesn't work! why?
+		// };
+		var localSquareMemory = display.value;
+
+		localSquareMemory = Math.sqrt(parseFloat(localSquareMemory));
+
+		display.value = localSquareMemory;
+	}
+	
+	
 	function operation(op) {
 		var localOperationMemory = display.value;
-		if (MemoryPendingOperation === "√x"){
-			localOperationMemory = Math.sqrt(parseFloat(localOperationMemory));// doesn't work! why?
-		};
+		
 		if (MemoryNewNumber && MemoryPendingOperation !== '=') {
 			display.value = MemoryCurrentNumber;
 		} else {
