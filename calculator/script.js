@@ -57,13 +57,13 @@ function numberPress(number) {
 		} else {
 			MemoryNewNumber = true;
 			if (MemoryPendingOperation === '+') {
-				MemoryCurrentNumber += parseFloat(localOperationMemory);
+				MemoryCurrentNumber = (MemoryCurrentNumber *1000000 + parseFloat(localOperationMemory)*1000000 )/1000000;
 			} else if (MemoryPendingOperation === '-') {
-				MemoryCurrentNumber -= parseFloat(localOperationMemory);
+				MemoryCurrentNumber = (MemoryCurrentNumber *1000000 - parseFloat(localOperationMemory)*1000000 )/1000000;;
 			} else if (MemoryPendingOperation === '*') {
-				MemoryCurrentNumber *= parseFloat(localOperationMemory);
+				MemoryCurrentNumber = ((MemoryCurrentNumber *1000000) *( parseFloat(localOperationMemory)*1000000 ))/1000000000000;;
 			} else if (MemoryPendingOperation === "/") {
-				MemoryCurrentNumber /= parseFloat(localOperationMemory);
+				MemoryCurrentNumber = (MemoryCurrentNumber *1000000 / parseFloat(localOperationMemory)*1000000 )/1000000000000;;
 			} else if (MemoryPendingOperation === "xy"){// how? why not<sup>?
 				MemoryCurrentNumber = MemoryCurrentNumber ** parseFloat(localOperationMemory);
 			}else {
