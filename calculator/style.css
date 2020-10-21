@@ -1,0 +1,155 @@
+body {
+  font-size: 20px;
+  background-color: #abaabc;
+}
+.main {
+    display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  background-color: #abaabc;
+  
+}
+.help__container{
+  margin-left: 100px;
+}
+.help{
+  width: 250px;
+  padding: 10px;
+  background-color:#ccc;
+   border-radius: 20px;
+   box-shadow: 3px 3px 3px rgba(46, 39, 53, .5);
+}
+
+.help__text--content{
+  padding:0 10px;
+  font-family: Arial;
+  text-align: justify;
+
+}
+.help__text--example{
+  padding-left:20px;
+  padding-top: 0;
+  font-size: 0.9em;
+  color: #178a17;
+}
+.calc {
+  background-color: #1c93ee;
+  width:375px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(46, 39, 53, .7);
+}
+.calc-display-input {
+  width: 95%;
+  height: 50px;
+  margin: 15px 0;
+  border-radius: 10px;
+  background-color: #02471c;
+  color: rgb(7, 197, 7);
+  text-align: right;
+  font-size: 40px;
+  padding: 10px;
+}
+.calc_button-row td {
+  margin: 0 auto;
+  padding: 5px;
+}
+.btn {
+  width: 67px;
+  height: 67px;
+  background-color: #f4f4f4;
+  font-size: 27px;
+  color: #666666;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.1s all;
+}
+.btn-hover-red:hover {
+  background-color: #d83e33;
+  color: #f2f2f2;
+}
+.btn-hover-orange:hover {
+  background-color: #ff6a00;
+  color: #f2f2f2;
+}
+.btn-hover-green:hover {
+  background-color: #3141ff;
+  color: #f2f2f2;
+}
+.btn:active {
+  transform: translateY(-1px);
+}
+.btn-long {
+  width: 145px;
+}
+.btn-plus {
+  height: 145px;
+}
+input,
+button {
+  padding: 5px 15px;
+  margin: 5px;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+}
+button {
+  margin-left: 0;
+  padding: 15px 24px;
+}
+@media screen and (max-width: 768px) {
+  .main{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .help__container{
+    margin-left: 0;
+  }
+  .help{
+   
+    width: 365px;
+  }
+  .calc {
+    width: 365px;
+    margin-top:20px;
+    
+  }
+  .calc-display-input {
+    width: 95%;
+  }
+  input[placeholder] {
+    font-size: 28px;
+  }
+  input::-moz-placeholder {
+    font-size: 28px;
+  }
+  input:-moz-placeholder {
+    font-size: 28px;
+  }
+  input:-ms-input-placeholder {
+    font-size: 28px;
+  }
+  .btn {
+    width: 64px;
+  }
+  .btn-long {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .calc {
+    width: 340px;
+  }
+  .calc-display-input {
+    width: 95%;
+  }
+  .btn {
+    width: 60px;
+  }
+  .btn-long {
+    width: 132px;
+  }
+}
